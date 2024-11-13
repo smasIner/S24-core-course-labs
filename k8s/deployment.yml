@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: app-python
 spec:
-  replicas: 3  # Ensures 3 replicas are created
+  replicas: 3
   selector:
     matchLabels:
       app: app-python
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app-python
-        image: smasiner2/python_app:latest  # Your container image
+        image: smasiner2/python_app:latest
         ports:
         - containerPort: 8080
         env:

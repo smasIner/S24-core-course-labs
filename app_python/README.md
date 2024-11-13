@@ -124,3 +124,8 @@ Pushes the Docker image to Docker Hub using secrets for authentication.
 
 All steps are chained with needs:
 
+## Compose:
+
+docker-compose build
+
+docker-compose up
