@@ -1,8 +1,0 @@
-#https://stackoverflow.com/questions/64662568/how-can-i-use-a-json-file-in-my-configmap-yaml-helm
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: myapp-config
-data:
-  config.json: |
-    {{ .Files.Get "files/config.json" | indent 4 }}
